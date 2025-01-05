@@ -1,6 +1,3 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
 import "@mantine/core/styles.css";
 
 import { MantineProvider, Text, createTheme } from "@mantine/core";
@@ -18,23 +15,10 @@ const theme = createTheme({
 	},
 });
 
-const  App = () => {
+export default function App() {
 	return (
 		<MantineProvider theme={theme} defaultColorScheme="dark">
 			<Home />
 		</MantineProvider>
 	);
-}
-
-
-const root = document.getElementById("root");
-
-if (root) {
-	createRoot(root).render(
-		<StrictMode>
-			<App />
-		</StrictMode>,
-	);
-} else {
-	console.error("Found no element root!");
 }

@@ -1,0 +1,33 @@
+.home {
+  background-color: black;
+  width: 100%;
+}
+
+.container {
+  max-width: 1296px;
+  padding: 0 76px;
+  margin: 0 auto;
+}
+
+.container_with_video {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.video_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
